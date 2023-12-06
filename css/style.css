@@ -3,19 +3,57 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 1440px;
+    height: 79px;
+}
+
+.logo-booki {
+    display: inline-flex;
+    position: relative;
+    padding: 30px 50px 30px 50px;
+    align-self: center;
 }
 
 .logo {
-    height: 80px;
+    position: relative;
+    width: 61px;
+    height: 19px;
 }
 
 .menu {
     list-style: none;
     display: flex;
+    align-self: flex-start;
+    height: 35px;
+    padding: 0px 50px;
+    position: relative;
 }
-  
-.boutons {
-    margin: 0 10px;
+
+.bouton-hebergements {
+    display: flex;
+    position: relative;
+    color: #0065FC;
+    height:100%;
+}
+
+#hebergements{
+    display: flex;
+    align-self: flex-end;
+}
+
+.bouton-hebergements:hover {
+    color: #0065FC;
+    border-top-style: solid;
+    border-top-color: #0065FC;
+    border-top-width: 2px;
+}
+
+.bouton-activites {
+    display: flex;
+    position: relative;
+    align-self: flex-end;
+    padding-left: 68px;
+    width: 63px;
 }
 
 /****** General ***********/
@@ -39,6 +77,13 @@ body {
 }
 
 .main-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 0px;
+    box-sizing: border-box;
+}
+
+main {
     width: 100%;
     max-width: 1440px;
     padding: 0 50px;

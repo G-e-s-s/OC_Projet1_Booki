@@ -33,25 +33,24 @@
     display: flex;
     position: relative;
     color: #0065FC;
-    height:100%;
 }
 
 #hebergements{
     display: flex;
-    align-self: flex-end;
+    align-self: flex-start;
 }
 
 .bouton-hebergements:hover {
-    color: #0065FC;
     border-top-style: solid;
     border-top-color: #0065FC;
     border-top-width: 2px;
+    padding-top: 14px;
 }
 
 .bouton-activites {
     display: flex;
     position: relative;
-    align-self: flex-end;
+    align-self: flex-start;
     padding-left: 68px;
     width: 63px;
 }

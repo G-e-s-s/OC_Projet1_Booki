@@ -36,21 +36,23 @@
             <!-- Formulaire de recherche -->
             <div class="infos">
                 <div class="groupe-infos">
-                    <p class="titre-infos">Trouvez votre hébergement pour des vacances de rêve</p>
+                    <h1 class="titre-infos">Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p class="sous-titre-infos">En plein centre-ville ou en pleine nature</p>
                 </div>
                 <div class="formulaire-recherche">
-                    <div class="btn-localisation">
-                        <i class="fa-solid fa-location-dot" style="color: #000000;"></i>
-                    </div>
+                    <div class="btn-localisation"><i class="fa-solid fa-location-dot" style="color: #000000;"></i></div>
                     <div class="groupe-bar">
-                        <fieldset class="bar-rechercher"><p>Marseille, France</p></fieldset>                            
-                        <input type="submit" value="Rechercher">
-                        <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+                        <form method="get" action="">
+                            <input type="text" value="Marseille, France" id="bar-rechercher">
+                        </form>
                     </div>
+                    <div class="btn-rechercher">Rechercher</div>
+                    <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
                 </div>
             </div>
-
+                        <!--<fieldset><p class="bar-rechercher">Marseille, France</p></fieldset>                            
+                        <input class="btn-rechercher" type="submit" value="Rechercher" action="#">
+                        </i>-->
             
             <!-- hebergements populaires -->
             <div class="hebergements-and-populaires">

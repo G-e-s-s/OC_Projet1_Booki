@@ -14,9 +14,7 @@
 .header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     width: 1440px;
-    height: 79px;
 }
 
 .logo-booki {
@@ -37,14 +35,16 @@
     display: flex;
     align-self: flex-start;
     height: 35px;
-    padding: 0px 50px;
     position: relative;
+    margin-top: 0px;
 }
 
 .bouton-hebergements {
-    display: flex;
-    position: relative;
     color: #0065FC;
+    border-top-style: solid;
+    border-top-color: transparent;
+    border-top-width: 2px;
+    padding-top: 8px;
 }
 
 #hebergements{
@@ -53,21 +53,16 @@
 }
 
 .bouton-hebergements:hover {
-    border-top-style: solid;
     border-top-color: #0065FC;
-    border-top-width: 2px;
-    padding-top: 14px;
 }
 
 .bouton-activites {
-    display: flex;
-    position: relative;
-    align-self: flex-start;
     padding-left: 68px;
     width: 63px;
+    padding-top: 8px;
 }
 
-/*** Bar de recherche ***/
+/*** Formulaire de recherche ***/
 .infos {
     display: flex;
     flex-direction: column;
@@ -105,6 +100,7 @@
     margin: 0 0 0 0;
 }
 
+/** Bar de recherche **/
 .formulaire-recherche {
     display: flex;
     position: relative;
@@ -148,6 +144,8 @@
     font-size: 18px;
     padding: 13px 16px;
     border-width: 1px;
+    border-style: solid;
+    border-color: #F2F2F2;
 }
 
 .btn-rechercher {
@@ -174,6 +172,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin-top: 0px;
 }
 
 main {

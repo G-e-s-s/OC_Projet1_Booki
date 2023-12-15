@@ -332,16 +332,13 @@ a {
 }
 
 
-.titre-hebergements {
+.titres-contenu {
     margin: 0 0 30px 0;
     font-size: 22px;
     font-weight: 700;
 }
 
 .groupe-chambres-1 {
-    /**display: grid;
-    grid-template-columns: 31% 31% 31%;
-    grid-template-rows: 50% 50%;**/
     display: flex;
     flex-direction: row;
     gap: 30px;
@@ -445,6 +442,52 @@ a {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
+
+/****** Activités à Marseille ******/
+
+.activites {
+    margin: 35px 0 35px 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#titre-activites {
+    margin: 0 0 30px 0;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.groupe-activites {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.cartes-activites {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: white;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.images-activites {
+    object-fit: cover;
+    width: 298px;
+    height: 380px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.description-activites {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 20px 19px;
+    margin: 0;
+}
+
 
 
 

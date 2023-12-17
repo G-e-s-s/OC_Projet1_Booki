@@ -16,29 +16,21 @@
 .header {
     display: flex;
     justify-content: space-between;
-    width: 1440px;
 }
 
 .logo-booki {
-    display: inline-flex;
-    position: relative;
     padding: 30px 50px 30px 50px;
-    align-self: center;
 }
 
 .logo {
-    position: relative;
-    width: 61px;
     height: 19px;
 }
 
 .menu {
     list-style: none;
     display: flex;
-    align-self: flex-start;
-    height: 35px;
-    position: relative;
     margin: 0;
+    align-items: baseline;
 }
 
 .bouton-hebergements {
@@ -49,18 +41,12 @@
     padding-top: 8px;
 }
 
-#btn-hebergements{
-    display: flex;
-    align-self: flex-start;
-}
-
 .bouton-hebergements:hover {
     border-top-color: #0065FC;
 }
 
 .bouton-activites {
-    padding: 8px 0 0 68px;
-    width: 63px;
+    padding: 0 0 0 68px;
     margin-right: 50px;
 }
 
@@ -78,7 +64,6 @@
 
 .titre-infos {
     font-family: "Raleway-Bold", Helvetica;
-    font-weight: 700;
     font-size: 22px;
     margin: 0;
 }
@@ -122,7 +107,6 @@
     font-size: 18px;
     padding: 15px 16px;
     display: inline-flex;
-    position: relative;
 }
 
 #icone-rechercher {
@@ -147,7 +131,7 @@
     font-family: "Raleway-Bold", Helvetica;
     font-weight: 700;
     font-size: 18px;
-    margin: 0;
+    margin: 0 15px 0 0;
 }
 
 .groupe-filtres {
@@ -315,7 +299,8 @@ a {
 /****** Hebergements And Populaires ******/
 .hebergements-and-populaires {
     display: flex;
-    gap: 40px;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 .hebergements-and-populaires section {
@@ -328,7 +313,7 @@ a {
 /****** Hebergements ***********/
 .hebergements {
     margin-top: 35px;
-    width: 100%;
+    width: 67%;
 }
 
 
@@ -338,17 +323,11 @@ a {
     font-weight: 700;
 }
 
-.groupe-chambres-1 {
+.groupe-chambres {
     display: flex;
     flex-direction: row;
-    gap: 30px;
-}
-
-.groupe-chambres-2 {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    margin: 30px 0 0 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .cartes {
@@ -359,6 +338,7 @@ a {
     width: 250px;
     height: 207px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    margin-bottom: 30px;
 }
 
 .images-chambres {
@@ -400,7 +380,7 @@ a {
 /****** Populaires ***********/
 .populaires {
     margin-top: 35px;
-    width: 100%;
+    width: 30%;
 }
 
 .populaires-title {
@@ -448,8 +428,6 @@ a {
 .activites {
     margin: 35px 0 35px 0;
     padding: 30px;
-    display: flex;
-    flex-direction: column;
 }
 
 #titre-activites {
@@ -461,22 +439,23 @@ a {
 .groupe-activites {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .cartes-activites {
-    display: flex;
-    flex-direction: column;
     border-radius: 20px;
-    box-sizing: border-box;
     background-color: white;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    display: flex;
+    flex-direction: column;
+    width: 298px;
+    height: 439px;
 }
 
 .images-activites {
     object-fit: cover;
-    width: 298px;
-    height: 380px;
+    height: 100%;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }

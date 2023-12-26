@@ -156,7 +156,7 @@
     flex-direction: row;
 }
 
-#icone {
+#icone-filtre {
     display: flex;
     padding: 4px 19px;
     border-radius: 25px;
@@ -172,7 +172,7 @@
     margin-left: 10px;
 }
 
-#icone:hover {
+#icone-filtre:hover {
     background-color: #DEEBFF;
 }
 
@@ -208,9 +208,7 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    margin: 0px;
+    margin: 0px auto;
     max-width: 1440px;
     min-width: 320px;
 }
@@ -484,7 +482,7 @@ footer {
         padding-top: 20px;
     }
 
-    #icone {
+    #icone-filtre {
         margin: 0 15px 0 0;
     }
 
@@ -552,7 +550,7 @@ footer {
     
     .bouton-hebergements:hover {
         border-top-color: transparent;
-        border-bottom: solid 2px #0065FC;
+        border-bottom: #0065FC 2px solid;
         color: #0065FC;
     }
     
@@ -566,7 +564,7 @@ footer {
     
     .bouton-activites:hover {
         border-top-color: transparent;
-        border-bottom: solid 2px #0065FC;
+        border-bottom: #0065FC 2px solid;
         color: #0065FC;
     }
 
@@ -591,13 +589,38 @@ footer {
         border-radius: 15px;
     }
 
+    .groupe-filtres {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .groupe-filtres a {
+        width: 47%;  
+        margin-bottom: 15px;
+    }
+
+    #icone-filtre {
+        margin: 0;
+    }
+
     .hebergements-and-populaires {
         padding: 0;
         flex-direction: column-reverse;
     }
+    .hebergements-and-populaires .hebergements {
+        background-color: transparent;
+    }
+
+    .hebergements-and-populaires .populaires {
+        border-radius: 0;
+    }
 
     .hebergements-and-populaires section {
-        padding: 30px 20px;
+        padding: 20px;
+    }
+
+    .hebergements {
+        margin-top: 15px;
     }
 
     .populaires {
@@ -606,6 +629,10 @@ footer {
 
     .populaires-cards {
         flex-direction: column;
+    }
+
+    .populaires-cards .card {
+        margin-top: 15px;
     }
 
     .populaires-cards a {
@@ -617,11 +644,15 @@ footer {
     }
 
     .activites {
-        margin: 0;
+        margin: 0 0 35px 0;
     }
 
     .groupe-activites {
         justify-content: space-around;
+    }
+
+    .groupe-activites a {
+        padding-top: 15px;
     }
 
     .cartes-activites {
@@ -639,9 +670,12 @@ footer {
 
     #footer-items {
         flex-direction: column;
+        padding: 30px;
+        margin: 0;
     }
 
     .a-propos {
-        width: 100%;
+        width: 70%;
+        padding: 0;
     }
 }
